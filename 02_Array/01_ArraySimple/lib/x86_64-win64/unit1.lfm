@@ -1,0 +1,28 @@
+object Form1: TForm1
+  Left = 1240
+  Height = 564
+  Top = 167
+  Width = 470
+  Caption = 'Array simple'
+  ClientHeight = 564
+  ClientWidth = 470
+  DesignTimePPI = 120
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.3'
+  object Button1: TButton
+    Left = 104
+    Height = 82
+    Top = 440
+    Width = 242
+    Caption = 'Generar y mostrar  valores'
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Left = 104
+    Height = 384
+    Top = 16
+    Width = 242
+    TabOrder = 1
+  end
+end

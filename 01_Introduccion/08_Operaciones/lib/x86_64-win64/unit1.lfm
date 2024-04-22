@@ -1,0 +1,128 @@
+object Form1: TForm1
+  Left = 1102
+  Height = 534
+  Top = 146
+  Width = 588
+  Caption = 'Operaciones'
+  ClientHeight = 534
+  ClientWidth = 588
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object GroupBox1: TGroupBox
+    Left = 32
+    Height = 105
+    Top = 57
+    Width = 185
+    Caption = 'Valores'
+    ClientHeight = 85
+    ClientWidth = 181
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 14
+      Height = 15
+      Top = 19
+      Width = 32
+      Caption = 'Inicio:'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 27
+      Height = 15
+      Top = 54
+      Width = 19
+      Caption = 'Fin:'
+      ParentColor = False
+    end
+    object edtInicio: TEdit
+      Left = 64
+      Height = 23
+      Top = 11
+      Width = 80
+      TabOrder = 0
+      Text = '1'
+    end
+    object edtFin: TEdit
+      Left = 64
+      Height = 23
+      Top = 48
+      Width = 80
+      TabOrder = 1
+      Text = '100'
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 31
+    Height = 120
+    Top = 232
+    Width = 185
+    Caption = 'Parámetros'
+    ClientHeight = 100
+    ClientWidth = 181
+    TabOrder = 1
+    object Label3: TLabel
+      Left = 6
+      Height = 15
+      Top = 22
+      Width = 92
+      Caption = 'Múltiplo Mostrar:'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 13
+      Height = 15
+      Top = 55
+      Width = 85
+      Caption = 'Múltiplo contar:'
+      ParentColor = False
+    end
+    object edtMulM: TEdit
+      Left = 113
+      Height = 23
+      Top = 16
+      Width = 48
+      TabOrder = 0
+      Text = '1'
+    end
+    object edtMulC: TEdit
+      Left = 113
+      Height = 23
+      Top = 55
+      Width = 48
+      TabOrder = 1
+      Text = '1'
+    end
+  end
+  object GroupBox3: TGroupBox
+    Left = 293
+    Height = 455
+    Top = 57
+    Width = 273
+    ClientHeight = 435
+    ClientWidth = 269
+    TabOrder = 2
+    object memResultados: TMemo
+      Left = 18
+      Height = 376
+      Top = 16
+      Width = 238
+      TabOrder = 0
+    end
+  end
+  object Calcular: TButton
+    Left = 32
+    Height = 25
+    Top = 184
+    Width = 91
+    Caption = 'Calcular'
+    OnClick = CalcularClick
+    TabOrder = 3
+  end
+  object Limpiar: TButton
+    Left = 136
+    Height = 25
+    Top = 184
+    Width = 80
+    Caption = 'Limpiar'
+    TabOrder = 4
+  end
+end

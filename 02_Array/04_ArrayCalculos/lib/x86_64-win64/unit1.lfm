@@ -1,0 +1,55 @@
+object Form1: TForm1
+  Left = 968
+  Height = 653
+  Top = 132
+  Width = 681
+  Caption = 'Operaciones con Arrays'
+  ClientHeight = 653
+  ClientWidth = 681
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object memResultados: TMemo
+    Left = 397
+    Height = 463
+    Top = 62
+    Width = 262
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object btnGenerar: TButton
+    Left = 88
+    Height = 82
+    Top = 88
+    Width = 163
+    Caption = 'Generar Valores Aleatorios'
+    OnClick = btnGenerarClick
+    TabOrder = 1
+  end
+  object btnMostrar: TButton
+    Left = 88
+    Height = 82
+    Top = 200
+    Width = 163
+    Caption = 'Mostrar Valores'
+    OnClick = btnMostrarClick
+    TabOrder = 2
+  end
+  object btnCalcular: TButton
+    Left = 88
+    Height = 82
+    Top = 312
+    Width = 163
+    Caption = 'Realizar Cálculos'
+    OnClick = btnCalcularClick
+    TabOrder = 3
+  end
+  object btnOrdenar: TButton
+    Left = 88
+    Height = 82
+    Top = 432
+    Width = 163
+    Caption = 'Ordenar Valores'
+    OnClick = btnOrdenarClick
+    TabOrder = 4
+  end
+end

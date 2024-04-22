@@ -1,0 +1,71 @@
+object Form1: TForm1
+  Left = 1289
+  Height = 168
+  Top = 174
+  Width = 520
+  Caption = 'Suma simple'
+  ClientHeight = 168
+  ClientWidth = 520
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 44
+    Height = 15
+    Top = 46
+    Width = 56
+    Caption = 'Numero 1:'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 48
+    Height = 15
+    Top = 80
+    Width = 56
+    Caption = 'Numero 2:'
+    ParentColor = False
+  end
+  object lblResultado: TLabel
+    Left = 344
+    Height = 30
+    Top = 56
+    Width = 160
+    Alignment = taCenter
+    AutoSize = False
+    Caption = '---'
+    Color = clAqua
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -21
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Transparent = False
+  end
+  object edtNum1: TEdit
+    Left = 113
+    Height = 23
+    Top = 40
+    Width = 80
+    TabOrder = 0
+    Text = '0'
+  end
+  object edtNum2: TEdit
+    Left = 113
+    Height = 23
+    Top = 72
+    Width = 80
+    TabOrder = 1
+    Text = '0'
+  end
+  object btnSumar: TButton
+    Left = 224
+    Height = 25
+    Top = 56
+    Width = 75
+    Caption = 'Sumar'
+    OnClick = btnSumarClick
+    TabOrder = 2
+  end
+end

@@ -1,0 +1,161 @@
+object Form1: TForm1
+  Left = 1052
+  Height = 626
+  Top = 130
+  Width = 758
+  Caption = 'Operaciones2'
+  ClientHeight = 626
+  ClientWidth = 758
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object GroupBox1: TGroupBox
+    Left = 24
+    Height = 128
+    Top = 40
+    Width = 152
+    Caption = 'Valores'
+    ClientHeight = 108
+    ClientWidth = 148
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 19
+      Height = 15
+      Top = 25
+      Width = 53
+      Caption = 'Número1:'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 19
+      Height = 15
+      Top = 68
+      Width = 50
+      Caption = 'Número2'
+      ParentColor = False
+    end
+    object edtNum1: TEdit
+      Left = 80
+      Height = 23
+      Top = 17
+      Width = 51
+      TabOrder = 0
+      Text = '0'
+    end
+    object edtNum2: TEdit
+      Left = 80
+      Height = 23
+      Top = 64
+      Width = 51
+      TabOrder = 1
+      Text = '0'
+    end
+  end
+  object rgpOperacion: TRadioGroup
+    Left = 232
+    Height = 129
+    Top = 40
+    Width = 137
+    AutoFill = True
+    Caption = 'Operaciones'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 109
+    ClientWidth = 133
+    ItemIndex = 0
+    Items.Strings = (
+      'Suma'
+      'Resta'
+      'Multiplicación'
+      'División'
+    )
+    TabOrder = 1
+  end
+  object GroupBox2: TGroupBox
+    Left = 448
+    Height = 465
+    Top = 40
+    Width = 280
+    Caption = 'GroupBox2'
+    ClientHeight = 445
+    ClientWidth = 276
+    TabOrder = 2
+    object memResultados: TMemo
+      Left = 8
+      Height = 392
+      Top = 8
+      Width = 256
+      ScrollBars = ssVertical
+      TabOrder = 0
+    end
+    object btnLimpiar: TButton
+      Left = 104
+      Height = 25
+      Top = 408
+      Width = 75
+      Caption = 'Limpiar'
+      OnClick = btnLimpiarClick
+      TabOrder = 1
+    end
+  end
+  object btnAmpliar: TButton
+    Left = 120
+    Height = 25
+    Top = 208
+    Width = 152
+    Caption = 'Ampliar'
+    OnClick = btnAmpliarClick
+    TabOrder = 3
+  end
+  object btnCalcular: TButton
+    Left = 24
+    Height = 81
+    Top = 528
+    Width = 720
+    Caption = 'Calcular'
+    OnClick = btnCalcularClick
+    TabOrder = 4
+  end
+  object grbExtras: TGroupBox
+    Left = 23
+    Height = 89
+    Top = 271
+    Width = 345
+    Caption = 'Trigonometría'
+    ClientHeight = 69
+    ClientWidth = 341
+    TabOrder = 5
+    Visible = False
+    object cmbAngulo: TComboBox
+      Left = 144
+      Height = 23
+      Top = 16
+      Width = 64
+      ItemHeight = 15
+      ItemIndex = 0
+      Items.Strings = (
+        '30'
+        '45'
+        '60'
+        '75'
+        '90'
+        '120'
+        '180'
+      )
+      TabOrder = 0
+      Text = '30'
+    end
+    object Label3: TLabel
+      Left = 88
+      Height = 15
+      Top = 24
+      Width = 42
+      Caption = 'Ángulo:'
+      ParentColor = False
+    end
+  end
+end

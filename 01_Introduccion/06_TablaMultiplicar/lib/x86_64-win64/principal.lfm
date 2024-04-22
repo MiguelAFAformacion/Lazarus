@@ -1,0 +1,121 @@
+object fPrincipal: TfPrincipal
+  Left = 1201
+  Height = 615
+  Top = 121
+  Width = 619
+  Caption = 'Tabla de Multiplicar'
+  ClientHeight = 615
+  ClientWidth = 619
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 159
+    Height = 32
+    Top = 24
+    Width = 300
+    Caption = 'Tabla de Multiplicar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -27
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsUnderline]
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnCalcular: TButton
+    Left = 256
+    Height = 25
+    Top = 272
+    Width = 75
+    Caption = 'Calcular'
+    OnClick = btnCalcularClick
+    TabOrder = 0
+  end
+  object lbxResultados: TListBox
+    Left = 376
+    Height = 424
+    Top = 112
+    Width = 196
+    Color = cl3DLight
+    ItemHeight = 0
+    TabOrder = 1
+  end
+  object GroupBox1: TGroupBox
+    Left = 32
+    Height = 81
+    Top = 184
+    Width = 185
+    ClientHeight = 61
+    ClientWidth = 181
+    TabOrder = 2
+    object edtNum: TEdit
+      Left = 83
+      Height = 23
+      Top = 16
+      Width = 85
+      TabOrder = 0
+      Text = '0'
+    end
+    object Label2: TLabel
+      Left = 16
+      Height = 15
+      Top = 20
+      Width = 47
+      Caption = 'Número:'
+      ParentColor = False
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 27
+    Height = 139
+    Top = 288
+    Width = 190
+    Caption = 'Parámetros'
+    ClientHeight = 119
+    ClientWidth = 186
+    TabOrder = 3
+    object Label3: TLabel
+      Left = 27
+      Height = 15
+      Top = 20
+      Width = 32
+      Caption = 'Inicio:'
+      ParentColor = False
+    end
+    object Label4: TLabel
+      Left = 31
+      Height = 15
+      Top = 76
+      Width = 28
+      Caption = 'Final:'
+      ParentColor = False
+    end
+    object edtIni: TEdit
+      Left = 88
+      Height = 23
+      Top = 16
+      Width = 80
+      TabOrder = 0
+      Text = '1'
+    end
+    object edtFin: TEdit
+      Left = 88
+      Height = 23
+      Top = 72
+      Width = 80
+      TabOrder = 1
+      Text = '10'
+    end
+  end
+  object btnLimpiar: TButton
+    Left = 448
+    Height = 25
+    Top = 560
+    Width = 75
+    Caption = 'Limpiar'
+    OnClick = btnLimpiarClick
+    TabOrder = 4
+  end
+end

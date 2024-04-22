@@ -1,0 +1,138 @@
+object Form1: TForm1
+  Left = 1338
+  Height = 656
+  Top = 150
+  Width = 558
+  Caption = 'Paneles de Colores'
+  ClientHeight = 656
+  ClientWidth = 558
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object pnlPanel: TPanel
+    Left = 129
+    Height = 300
+    Top = 177
+    Width = 300
+    BevelColor = clBlack
+    BevelOuter = bvLowered
+    BevelWidth = 5
+    BorderWidth = 1
+    ParentColor = False
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 41
+    Height = 120
+    Top = 16
+    Width = 477
+    Caption = 'Haz click'
+    ClientHeight = 100
+    ClientWidth = 473
+    TabOrder = 1
+    object btnRojo: TButton
+      Left = 48
+      Height = 47
+      Top = 24
+      Width = 104
+      Caption = 'Rojo'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -21
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = btnRojoClick
+      ParentFont = False
+      TabOrder = 0
+    end
+    object btnAmarillo: TButton
+      Left = 192
+      Height = 47
+      Top = 24
+      Width = 104
+      Caption = 'Amarillo'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -21
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = btnAmarilloClick
+      ParentFont = False
+      TabOrder = 1
+    end
+    object btnVerde: TButton
+      Left = 336
+      Height = 47
+      Top = 24
+      Width = 104
+      Caption = 'Verde'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clRed
+      Font.Height = -21
+      Font.Name = 'Segoe UI'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      OnClick = btnVerdeClick
+      ParentFont = False
+      TabOrder = 2
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 41
+    Height = 120
+    Top = 504
+    Width = 477
+    Caption = 'Pasa por encima'
+    ClientHeight = 100
+    ClientWidth = 473
+    TabOrder = 2
+    object pnlRojo: TPanel
+      Left = 32
+      Height = 71
+      Top = 16
+      Width = 71
+      Color = clRed
+      ParentColor = False
+      TabOrder = 0
+      OnMouseEnter = pnlRojoMouseEnter
+      OnMouseLeave = pnlRojoMouseLeave
+    end
+    object pnlAmarillo: TPanel
+      Left = 200
+      Height = 71
+      Top = 16
+      Width = 71
+      ClientHeight = 71
+      ClientWidth = 71
+      Color = clYellow
+      ParentColor = False
+      TabOrder = 1
+      OnMouseEnter = pnlAmarilloMouseEnter
+      OnMouseLeave = pnlAmarilloMouseLeave
+      object Panel3: TPanel
+        Left = 176
+        Height = 71
+        Top = -24
+        Width = 71
+        Color = clRed
+        ParentColor = False
+        TabOrder = 0
+      end
+    end
+    object pnlVerde: TPanel
+      Left = 360
+      Height = 71
+      Top = 16
+      Width = 71
+      Color = clLime
+      ParentColor = False
+      TabOrder = 2
+      OnMouseEnter = pnlVerdeMouseEnter
+      OnMouseLeave = pnlVerdeMouseLeave
+    end
+  end
+end

@@ -1,0 +1,52 @@
+object Form1: TForm1
+  Left = 1087
+  Height = 307
+  Top = 128
+  Width = 771
+  Caption = 'Primeros Pasos'
+  ClientHeight = 307
+  ClientWidth = 771
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object btnPulsar: TButton
+    Left = 348
+    Height = 25
+    Top = 112
+    Width = 75
+    Caption = 'Pulsa aquí'
+    OnClick = btnPulsarClick
+    TabOrder = 0
+  end
+  object Label1: TLabel
+    Left = 101
+    Height = 15
+    Top = 40
+    Width = 85
+    Caption = 'Introducir texto:'
+    ParentColor = False
+  end
+  object edtTexto: TEdit
+    Left = 197
+    Height = 23
+    Top = 32
+    Width = 472
+    TabOrder = 1
+  end
+  object lblTexto: TLabel
+    Left = 24
+    Height = 25
+    Top = 216
+    Width = 720
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Sin texto'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+  end
+end

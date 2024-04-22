@@ -1,0 +1,181 @@
+object Form1: TForm1
+  Left = 1024
+  Height = 600
+  Top = 204
+  Width = 800
+  Caption = 'Paneles de colores'
+  ClientHeight = 600
+  ClientWidth = 800
+  Position = poScreenCenter
+  LCLVersion = '3.0.0.3'
+  object pnlPrincipal: TPanel
+    Left = 32
+    Height = 266
+    Top = 24
+    Width = 746
+    ClientHeight = 266
+    ClientWidth = 746
+    TabOrder = 0
+    OnClick = pnlPrincipalClick
+    OnDblClick = pnlPrincipalDblClick
+    object pnlP1: TPanel
+      Left = 24
+      Height = 200
+      Top = 56
+      Width = 200
+      Color = clWhite
+      Enabled = False
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 0
+    end
+    object pnlP2: TPanel
+      Left = 272
+      Height = 200
+      Top = 56
+      Width = 200
+      Color = clWhite
+      Enabled = False
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 1
+    end
+    object pnlP3: TPanel
+      Left = 520
+      Height = 200
+      Top = 56
+      Width = 200
+      Color = clWhite
+      Enabled = False
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 2
+    end
+    object Label1: TLabel
+      Left = 64
+      Height = 32
+      Top = 8
+      Width = 83
+      Caption = 'Panel 1'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -24
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 328
+      Height = 32
+      Top = 8
+      Width = 83
+      Caption = 'Panel 2'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -24
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label3: TLabel
+      Left = 576
+      Height = 32
+      Top = 8
+      Width = 83
+      Caption = 'Panel 3'
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clBlue
+      Font.Height = -24
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+  end
+  object rdgEventos: TRadioGroup
+    Left = 32
+    Height = 193
+    Top = 360
+    Width = 177
+    AutoFill = True
+    Caption = 'Eventos'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 173
+    ClientWidth = 173
+    ItemIndex = 0
+    Items.Strings = (
+      'Ninguno'
+      'Click'
+      'Doble Click'
+    )
+    OnClick = rdgEventosClick
+    TabOrder = 1
+  end
+  object rdgColores: TRadioGroup
+    Left = 304
+    Height = 184
+    Top = 369
+    Width = 186
+    AutoFill = True
+    Caption = 'Colores'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 164
+    ClientWidth = 182
+    ItemIndex = 0
+    Items.Strings = (
+      'Rojo'
+      'Verde'
+      'Azul'
+      'Aleatorio'
+    )
+    TabOrder = 2
+  end
+  object rdgPaneles: TRadioGroup
+    Left = 560
+    Height = 176
+    Top = 376
+    Width = 200
+    AutoFill = True
+    Caption = 'Paneles'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 156
+    ClientWidth = 196
+    ItemIndex = 0
+    Items.Strings = (
+      'Todos'
+      'Panel 1'
+      'Panel 2'
+      'Panel 3'
+    )
+    TabOrder = 3
+  end
+  object btnReset: TBitBtn
+    Left = 328
+    Height = 30
+    Top = 304
+    Width = 75
+    Caption = 'Reset'
+    OnClick = btnResetClick
+    TabOrder = 4
+  end
+end

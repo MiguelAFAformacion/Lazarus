@@ -1,0 +1,183 @@
+object Form1: TForm1
+  Left = 1008
+  Height = 276
+  Top = 135
+  Width = 710
+  Caption = 'Operaciones Básicas'
+  ClientHeight = 276
+  ClientWidth = 710
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object Label1: TLabel
+    Left = 200
+    Height = 32
+    Top = 16
+    Width = 270
+    Caption = 'OPERACIONES BÁSICAS'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clNavy
+    Font.Height = -24
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsUnderline]
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnOperar: TButton
+    Left = 288
+    Height = 25
+    Top = 128
+    Width = 75
+    Caption = '&Operar'
+    OnClick = btnOperarClick
+    TabOrder = 0
+  end
+  object GroupBox1: TGroupBox
+    Left = 32
+    Height = 169
+    Top = 64
+    Width = 240
+    Caption = 'Valores'
+    ClientHeight = 149
+    ClientWidth = 236
+    TabOrder = 1
+    object Label2: TLabel
+      Left = 27
+      Height = 15
+      Top = 29
+      Width = 56
+      Caption = 'Número 1:'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      Left = 27
+      Height = 15
+      Top = 92
+      Width = 56
+      Caption = 'Número 2:'
+      ParentColor = False
+    end
+    object edtNum1: TEdit
+      Left = 116
+      Height = 23
+      Top = 25
+      Width = 80
+      TabOrder = 0
+      Text = '0'
+    end
+    object edtNum2: TEdit
+      Left = 116
+      Height = 23
+      Top = 88
+      Width = 80
+      TabOrder = 1
+      Text = '0'
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 384
+    Height = 168
+    Top = 64
+    Width = 297
+    Caption = 'Resultados'
+    ClientHeight = 148
+    ClientWidth = 293
+    TabOrder = 2
+    object edtDivi: TEdit
+      Left = 135
+      Height = 28
+      Top = 110
+      Width = 144
+      Alignment = taCenter
+      Color = clAqua
+      Enabled = False
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 0
+    end
+    object Label7: TLabel
+      Left = 58
+      Height = 15
+      Top = 117
+      Width = 45
+      Caption = 'División:'
+      ParentColor = False
+    end
+    object edtMulti: TEdit
+      Left = 135
+      Height = 28
+      Top = 80
+      Width = 144
+      Alignment = taCenter
+      Color = clAqua
+      Enabled = False
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Label6: TLabel
+      Left = 24
+      Height = 15
+      Top = 87
+      Width = 79
+      Caption = 'Multiplicación:'
+      ParentColor = False
+    end
+    object edtResta: TEdit
+      Left = 135
+      Height = 28
+      Top = 48
+      Width = 144
+      Alignment = taCenter
+      Color = clAqua
+      Enabled = False
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 2
+    end
+    object Label5: TLabel
+      Left = 72
+      Height = 15
+      Top = 55
+      Width = 31
+      Caption = 'Resta:'
+      ParentColor = False
+    end
+    object edtSuma: TEdit
+      Left = 135
+      Height = 28
+      Top = 16
+      Width = 144
+      Alignment = taCenter
+      Color = clAqua
+      Enabled = False
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -15
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      Font.Style = [fsBold]
+      ParentFont = False
+      TabOrder = 3
+    end
+    object Label4: TLabel
+      Left = 70
+      Height = 15
+      Top = 23
+      Width = 33
+      Caption = 'Suma:'
+      ParentColor = False
+    end
+  end
+end

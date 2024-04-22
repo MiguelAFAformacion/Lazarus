@@ -1,0 +1,41 @@
+object Form1: TForm1
+  Left = 1132
+  Height = 256
+  Top = 137
+  Width = 661
+  Caption = 'Hola Mundo'
+  ClientHeight = 256
+  ClientWidth = 661
+  Position = poScreenCenter
+  LCLVersion = '2.2.6.0'
+  object lblTexto: TLabel
+    Left = 214
+    Height = 41
+    Top = 69
+    Width = 232
+    Caption = 'Hola Mundo!!!'
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clGreen
+    Font.Height = -35
+    Font.Name = 'Georgia'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentColor = False
+    ParentFont = False
+  end
+  object btnPulsar: TButton
+    Left = 272
+    Height = 41
+    Top = 160
+    Width = 139
+    Caption = 'Pulsa aquí'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -19
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    OnClick = btnPulsarClick
+    ParentFont = False
+    TabOrder = 0
+  end
+end
